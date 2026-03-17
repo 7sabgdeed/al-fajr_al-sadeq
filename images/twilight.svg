@@ -1,0 +1,90 @@
+<svg viewBox="-50 -200 1500 1000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>SkyEye: Twilight</title>
+<desc>Horizon Diagrams for the Different Types of Twilight</desc>
+
+<defs>
+  <linearGradient id="civiltwilight" x1="0%" y1="100%" x2="0%" y2="0%" spreadMethod="pad">
+    <stop offset="0%" stop-color="#ffddcc"/>
+    <stop offset="50%" stop-color="#ccddee"/>
+    <stop offset="100%" stop-color="#6699cc"/>
+  </linearGradient>
+  <linearGradient id="nauticaltwilight" x1="0%" y1="100%" x2="0%" y2="0%" spreadMethod="pad">
+    <stop offset="0%" stop-color="#dd9966"/>
+    <stop offset="15%" stop-color="#aabbcc"/>
+    <stop offset="100%" stop-color="#000066"/>
+  </linearGradient>
+  <circle id="Sun" cx="0" cy="0" r="5" fill="#ffff99"/>
+  <circle id="star" cx="0" cy="0" r="1" fill="#ffffff"/>
+  <g id="arrow">
+    <line x1="0" y1="0" x2="0" y2="90" stroke="#ffff99" stroke-width="2"/>
+    <path d="M 0 0 L 10 10 L -10 10 Z" fill="#ffff99"/>
+    <path d="M 0 90 L 10 80 L -10 80 Z" fill="#ffff99"/>
+  </g>
+</defs>
+
+<g id="civil">
+  <path d="M 0 0 L 400 0 L 400 250 L 0 250 Z" fill="url(#civiltwilight)"/>
+  <path d="M 0 249 L 400 249 L 400 700 L 0 700 Z" fill="#009900"/>
+  <use href="#Sun" transform="translate(100,255)"/>
+  <use href="#Sun" transform="translate(100,370)"/>
+  <use href="#arrow" transform="translate(100, 267.5)"/>
+  <g font-family="sans-serif">
+    <text x="200" y="-20" fill="#000000" font-size="36px" text-anchor="middle">Civil</text>
+    <text x="120" y="265" fill="#000000" font-size="24px">sunrise/sunset</text>
+    <text x="120" y="375" fill="#000000" font-size="24px">6° below horizon</text>
+  </g>
+</g>
+
+<g id="nautical">
+  <path d="M 500 0 L 900 0 L 900 250 L 500 250 Z" fill="url(#nauticaltwilight)"/>
+  <path d="M 500 249 L 900 249 L 900 700 L 500 700 Z" fill="#004400"/>
+  <use href="#Sun" transform="translate(600,370)"/>
+  <use href="#Sun" transform="translate(600,490)"/>
+  <use href="#arrow" transform="translate(600, 385)"/>
+  <use href="#star" transform="translate(550,50) scale(1.0)"/>
+  <use href="#star" transform="translate(750,10) scale(1.0)"/>
+  <use href="#star" transform="translate(850,20) scale(1.0)"/>
+  <g font-family="sans-serif">
+    <text x="700" y="-20" fill="#000000" font-size="36px" text-anchor="middle">Nautical</text>
+    <text x="620" y="375" fill="#ffffff" font-size="24px">6° below horizon</text>
+    <text x="620" y="495" fill="#ffffff" font-size="24px">12° below horizon</text>
+  </g>
+</g>
+
+<g id="astronomical">
+  <path d="M 1000 0 L 1400 0 L 1400 250 L 1000 250 Z" fill="#000011"/>
+  <path d="M 1000 249 L 1400 249 L 1400 700 L 1000 700" fill="#001100"/>
+  <use href="#Sun" transform="translate(1100,490)"/>
+  <use href="#Sun" transform="translate(1100,610)"/>
+  <use href="#arrow" transform="translate(1100, 505)"/>
+  <use href="#star" transform="translate(1010,180) scale(1.5)"/>
+  <use href="#star" transform="translate(1050,50) scale(3.0)"/>
+  <use href="#star" transform="translate(1100,5) scale(2.0)"/>
+  <use href="#star" transform="translate(1100,200) scale(1.5)"/>
+  <use href="#star" transform="translate(1110,130) scale(1.0)"/>
+  <use href="#star" transform="translate(1140,230) scale(1.0)"/>
+  <use href="#star" transform="translate(1200,40) scale(1.5)"/>
+  <use href="#star" transform="translate(1200,150) scale(2.0)"/>
+  <use href="#star" transform="translate(1240,60) scale(1.0)"/>
+  <use href="#star" transform="translate(1250,10) scale(3.0)"/>
+  <use href="#star" transform="translate(1290,230) scale(1.0)"/>
+  <use href="#star" transform="translate(1300,120) scale(2.0)"/>
+  <use href="#star" transform="translate(1330,240) scale(1.0)"/>
+  <use href="#star" transform="translate(1350,20) scale(3.0)"/>
+  <use href="#star" transform="translate(1360,150) scale(1.0)"/>
+  <use href="#star" transform="translate(1370,200) scale(1.5)"/>
+  <use href="#star" transform="translate(1380,30) scale(1.5)"/>
+  <g font-family="sans-serif">
+    <text x="1200" y="-20" fill="#000000" font-size="36px" text-anchor="middle">Astronomical</text>
+    <text x="1120" y="495" fill="#ffffff" font-size="24px">12° below horizon</text>
+    <text x="1120" y="615" fill="#ffffff" font-size="24px">18° below horizon</text>
+  </g>
+</g>
+
+<g id="frame" fill="#000000" font-family="sans-serif" font-weight="bold" text-anchor="middle">
+   <text x="700" y="-100" font-size="120px" opacity="0.05">Obliquity.com</text>
+   <text x="700" y="-100" font-size="90px">The Twilight Zones</text>
+   <text x="700" y="750" font-size="18px">Copyright &#x0a9; 2020 by L.M. Stockman &#x2014; All Rights Reserved</text>
+   <text x="700" y="775" font-size="18px">https://www.obliquity.com/skyeye/</text>
+</g>
+</svg>
